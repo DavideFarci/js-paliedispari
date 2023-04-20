@@ -44,19 +44,24 @@ isEven(sum);
 
 // Imposto una condizionale per stabilire il vincitore
 if (eleEvenOdd == "pari" && isEven(sum) == true || eleEvenOdd == "dispari" && isEven(sum) == false) {
+    console.log("Tu hai scelto:", eleEvenOdd);
     console.log("Il tuo numero:", eleNumUser);
     console.log("Il numero del computer:", eleRandomPC);
     console.log("La somma è:", sum);
     console.log("Hai vinto!!!!");
-} else if (eleEvenOdd == "dispari" && isEven(sum) == false || eleEvenOdd == "pari" && isEven(sum) == true) {
-    console.log("Il tuo numero:", eleNumUser);
-    console.log("Il numero del computer:", eleRandomPC);
-    console.log("La somma è:", sum);
-    console.log("Hai vinto!!!!"); 
 } else {
+    console.log("Tu hai scelto:", eleEvenOdd);
     console.log("Il tuo numero:", eleNumUser);
     console.log("Il numero del computer:", eleRandomPC);
     console.log("La somma è:", sum);
-    console.log("Hai perso!!!!");  
-}
+    console.log("Hai perso!!!!");
+}    
 
+
+
+
+// else if (eleEvenOdd == "dispari" && isEven(sum) == false || eleEvenOdd == "pari" && isEven(sum) == true) {
+//     console.log("Il tuo numero:", eleNumUser);
+//     console.log("Il numero del computer:", eleRandomPC);
+//     console.log("La somma è:", sum);
+//     console.log("Hai vinto!!!!"); 
