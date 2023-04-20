@@ -24,10 +24,16 @@ function isEven(number) {
 
 
 // Chiedo all'utente di scegliere pari o dispari, inserisco un controllo per i valori corretti
-const eleEvenOdd = prompt("Scegli Pari o Dispari");
-// if (eleEvenOdd !== "Pari" || eleEvenOdd !== "pari" || eleEvenOdd !== "Dispari" || eleEvenOdd !== "dispari"){
-//     alert("Aggiorna la pagina e inserisci valore corretto!");
-// }
+// let eleEvenOdd = prompt("Scegli Pari o Dispari").toLowerCase();
+
+let eleEvenOdd = 0;
+while (eleEvenOdd !== "pari" || eleEvenOdd !== "dispari") {
+    alert("Aggiorna la pagina e inserisci valore corretto!");
+    let eleEvenOdd = prompt("Scegli Pari o Dispari").toLowerCase();
+    eleEvenOdd++ 
+}
+
+
 
 // Chiedo all'utente un numero da uno a cinque
 const eleNumUser = parseInt(prompt("Dammi un numero da 1 a 5"));
