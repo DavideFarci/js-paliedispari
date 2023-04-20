@@ -42,18 +42,16 @@ let sum = eleNumUser + eleRandomPC;
 // Chiamo la funzione per controllare se la somma è pari o dispari
 isEven(sum);
 
+// Scrivo tutti i dati sulla console
+console.log("Tu hai scelto:", eleEvenOdd);
+console.log("Il tuo numero:", eleNumUser);
+console.log("Il numero del computer:", eleRandomPC);
+console.log("La somma è:", sum);
+
 // Imposto una condizionale per stabilire il vincitore
 if (eleEvenOdd == "pari" && isEven(sum) == true || eleEvenOdd == "dispari" && isEven(sum) == false) {
-    console.log("Tu hai scelto:", eleEvenOdd);
-    console.log("Il tuo numero:", eleNumUser);
-    console.log("Il numero del computer:", eleRandomPC);
-    console.log("La somma è:", sum);
     console.log("Hai vinto!!!!");
 } else {
-    console.log("Tu hai scelto:", eleEvenOdd);
-    console.log("Il tuo numero:", eleNumUser);
-    console.log("Il numero del computer:", eleRandomPC);
-    console.log("La somma è:", sum);
     console.log("Hai perso!!!!");
 }    
 
