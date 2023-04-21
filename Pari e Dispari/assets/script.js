@@ -16,24 +16,18 @@ function getRandomInteger(min, max) {
 // Creo una funzione che controlli se un numero è pari o dispari
 function isEven(number) {
 	if (number % 2 == 0) {
-        return true;
+        return "pari";
     } else {
-        return false
+        return "dispari";
     }
 }
 
 
-// Chiedo all'utente di scegliere pari o dispari, inserisco un controllo per i valori corretti
-// let eleEvenOdd = prompt("Scegli Pari o Dispari").toLowerCase();
-
-let eleEvenOdd = 0;
-while (eleEvenOdd !== "pari" || eleEvenOdd !== "dispari") {
-    alert("Aggiorna la pagina e inserisci valore corretto!");
-    let eleEvenOdd = prompt("Scegli Pari o Dispari").toLowerCase();
-    eleEvenOdd++ 
+// Chiedo all'utente di scegliere pari o dispari, inserisco un ciclo while per impedire all'utente di andare avanti nel caso in cui l'utente non inserisca i valori corretti.
+let eleEvenOdd = "";
+while (eleEvenOdd !== "pari" && eleEvenOdd !== "dispari") {
+  eleEvenOdd = prompt("Inserisci 'pari' o 'dispari':");
 }
-
-
 
 // Chiedo all'utente un numero da uno a cinque
 const eleNumUser = parseInt(prompt("Dammi un numero da 1 a 5"));
@@ -55,7 +49,7 @@ console.log("Il numero del computer:", eleRandomPC);
 console.log("La somma è:", sum);
 
 // Imposto una condizionale per stabilire il vincitore
-if (eleEvenOdd == "pari" && isEven(sum) == true || eleEvenOdd == "dispari" && isEven(sum) == false) {
+if (eleEvenOdd == isEven(sum)) {
     console.log("Hai vinto!!!!");
 } else {
     console.log("Hai perso!!!!");
